@@ -116,7 +116,7 @@ class pyrow(object):
         results = self.send(command)
 
         forceplot = {}
-        datapoints = results['CSAFE_PM_GET_FORCEPLOTDATA'][0] / 2
+        datapoints = results['CSAFE_PM_GET_FORCEPLOTDATA'][0] // 2
         forceplot['forceplot'] = results['CSAFE_PM_GET_FORCEPLOTDATA'][1:(datapoints+1)]
         forceplot['strokestate'] = results['CSAFE_PM_GET_STROKESTATE'][0]
 
