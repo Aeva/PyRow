@@ -130,9 +130,10 @@ def write(arguments):
     if maxmessage <= 21:
         message.insert(0, 0x01)
         message += [0] * (21 - len(message))
-    elif maxmessage <= 63:
-        message.insert(0, 0x04)
-        message += [0] * (63 - len(message))
+    ## see https://github.com/wemakewaves/PyRow/issues/5
+    #elif maxmessage <= 63:
+    #    message.insert(0, 0x04)
+    #    message += [0] * (63 - len(message))
     elif (len(message) + 1) <= 121:
         message.insert(0, 0x02)
         message += [0] * (121 - len(message))
