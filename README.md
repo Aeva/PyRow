@@ -10,11 +10,9 @@ PyRow is python code that allows one to interact with a Concept 2 Rowing Ergomet
 
 For an explanation of the csafe commands please use the following documentation:
 
-- [Concept2 PM Communication Interface Definition](http://www.concept2.com/service/software/software-development-kit)
+- [Concept2 PM Communication Interface Definition](https://www.concept2.com/files/pdf/us/monitors/PM5_CSAFECommunicationDefinition.pdf)
 
-_Need to download the SDK to get the document_
-
-- [Communications Specification for Fitness Equipment](http://www.fitlinxx.com/CSAFE/)
+- [Communications Specification for Fitness Equipment](https://web.archive.org/web/20080614002257/http://www.fitlinxx.com/CSAFE/)
 
 Site: http://www.newhavenrowingclub.org/pyrow/
 
