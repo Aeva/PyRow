@@ -26,7 +26,7 @@ Licensed under the Simplified BSD License.
 
 PyRow has been tested on an Ubuntu machine with the software versions listed below, PyRow should be able to work on any machine that can run Python & PyUSB but this has not been tested and confirmed.
 
-- [Python](http://python.org/) (Tested with 2.7.2)
+- [Python](http://python.org/)
 - [libusb](http://www.libusb.org/)
 
         sudo apt-get install libudev-dev libusb-dev python
@@ -169,8 +169,8 @@ ex: getting pace and printing it out
 
     command = ['CSAFE_GETPACE_CMD',]
     result = erg.send(command)
-    print "Stroke Pace = " + str(result['CSAFE_GETPACE_CMD'][0])
-    print "Stroke Units = " + str(result['CSAFE_GETPACE_CMD'][1])
+    print("Stroke Pace = " + str(result['CSAFE_GETPACE_CMD'][0]))
+    print("Stroke Units = " + str(result['CSAFE_GETPACE_CMD'][1]))
 
 ## FILES
 
